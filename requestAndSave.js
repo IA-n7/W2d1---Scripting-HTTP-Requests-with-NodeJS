@@ -12,7 +12,6 @@ function getHTML (options, callback) {
 
     response.on('data', function (data) {
       str += data;
-
     });
 
     response.on('end', function() {
@@ -27,8 +26,6 @@ function getHTML (options, callback) {
   function printHTML (html) {
   console.log(html);
 }
-
-
 
   var requestOptions = {
     host: 'sytantris.github.io',
