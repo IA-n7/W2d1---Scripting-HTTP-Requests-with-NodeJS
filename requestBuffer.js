@@ -15,6 +15,7 @@ https.get(requestOptions, function (response) {
 
   response.on('data', function (data) {
     str += data;
+    console.log(str);
   });
 
   response.on('end', function() {
@@ -23,4 +24,5 @@ https.get(requestOptions, function (response) {
 
 });
 }
+console.log(getAndPrintHTMLChunks());
 
