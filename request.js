@@ -22,5 +22,4 @@ https.get(requestOptions, function (response) {
 });
 }
 
-
-console.log(getAndPrintHTMLChunks());
+getAndPrintHTML();

@@ -13,6 +13,7 @@ https.get(options, function (response) {
   });
 
   response.on('end', function() {
+    console.log(str);
     console.log('End of all data/chunks');
   });
 
@@ -23,3 +24,6 @@ https.get(options, function (response) {
   //   host: 'sytantris.github.io',
   //   path: '/http-examples/step1.html'
   // };
+
+
+getAndPrintHTML();

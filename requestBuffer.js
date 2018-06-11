@@ -15,14 +15,14 @@ https.get(requestOptions, function (response) {
 
   response.on('data', function (data) {
     str += data;
-    console.log(str);
   });
 
   response.on('end', function() {
+    console.log(str);
     console.log('End of all data/chunks');
   });
 
 });
 }
-console.log(getAndPrintHTMLChunks());
+getAndPrintHTMLChunks();
 
